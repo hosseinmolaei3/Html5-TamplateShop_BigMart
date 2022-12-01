@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Css Style/singin style.css">
+    <title>Sing In</title>
+</head>
+<body>
+    <h1 class="mt-5 mb-3 fw-bold d-flex justify-content-center">Welcome In BiG MarT</h1>
+    <div class="d-flex flex-row justify-content-center mt-5 mb-3">
+        <div class="w-50">
+            <div id="divuser" class=" form-floating mb-3 ">
+                <input type="text" id="iuser" class="form-control fs-4 fw-bold" placeholder="username" required>
+                <label for="iuser">Username</label>
+            </div>
+            <div id="divpass" class=" input-group mb-3">
+                <div class="form-floating ">
+                    <input type="password" id="ipass" class=" form-control fs-4 fw-bold" placeholder="password"> 
+                    <label for="ipass">Password</label>
+                </div>
+                <button class="btn btn-outline-dark input-group-text" onclick="btnshow()">
+                    <i id="oeye" class="fa fa-eye d-none" aria-hidden="true"></i>
+                    <i id="ceye" class="fa fa-eye-slash" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center form-check  mb-4">
+        <input type="checkbox" id="CheckRemind" class="form-check-input">
+        <label for="CheckRemind" class="form-check-label ms-4"> Remember Me </label>
+    </div>
+   
+    <div class="d-flex flex-row justify-content-center mb-4">
+        <button onclick="Checkvalue()" class="btn btn-outline-success"><i class="fa fa-sign-in" aria-hidden="true"></i> Sing In</button>
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+        <a href="#">i forgot password/username</a>
+    </div>
+</body>
+<script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/1ece41a795.js" crossorigin="anonymous"></script>
+<script src="./Scripts js/Eyes Show.js"></script>
+<script src="./Scripts js/CheckValue.js"></script>
+</html>

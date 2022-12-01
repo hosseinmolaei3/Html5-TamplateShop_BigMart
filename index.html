@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Css Style/style home page.css">
+    <title>Big Mart</title>
+</head>
+<body>
+  
+    <header class="navbar d-flex flex-row justify-content-around mb-3" id="header">
+        <a class=" navbar-brand" href="#">
+            <img src="./download.png" style="width:48px ;height:48px ;" alt="logo">
+        </a>
+        <form class="d-flex col-8" role="search">
+            <input type="search" class="form-control me-2" placeholder="Search">
+            <button class="btn btn-outline-dark  fa fa-search" id="basic-addon2"></button>
+        </form>
+        <div class="d-flex flex-row col-2">
+            <a href="./singin index.html" class="btn btn-outline-success me-2 d-none d-md-inline-block">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                 Singin
+            </a>
+            <a href="./singup index.html" class="btn btn-outline-dark me-2 d-none d-md-inline-block">Singup</a>
+            <p class=" text-muted me-2 d-none d-md-block">|</p>
+            <a href="./basket index.html" class="btn btn-primary position-relative d-none d-md-inline-block">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="badge bg-secondary position-absolute top-0 start-100 visually-hidden">0</span>
+            </a>
+        </div>
+    </header>
+    <!-- nav bar -->
+    <nav class=" navbar navbar-expand " id="navbar">
+        <div class="navbar-nav">
+            <a class=" nav-link fw-bold fs-3 active d-none d-md-inline" href="#multicollapse" data-bs-toggle="collapse" role="button" aria-controls="multicollapse" aria-expanded="false"> <i class="bi bi-layout-sidebar-inset"></i> list item</a>
+            <a class=" nav-link fw-bold fs-3 " href="./index.html">Home</a >
+            <a class=" nav-link fw-bold fs-3 " href="./computershop.html">Computer Shop</a >
+            <a class=" nav-link fw-bold fs-3 " href="#">Best Seller</a >
+            <a class=" nav-link fw-bold fs-3 " href="#">Most Viewed</a >
+        </div>
+    </nav>
+    <div class="collapse multi-collapse" id="multicollapse">
+        <div class="card card-body d-flex flex-row">
+            <div class="d-flex flex-column">
+                <a class=" nav-link fw-bold fs-5 " href=""><i class="bi bi-phone"></i> </a>
+                <a class=" nav-link fw-bold fs-5 " href=""><i class="fa fa-battery-full"></i> </a>
+                <a class=" nav-link fw-bold fs-5 " href=""><i class="bi bi-car-front-fill"></i> </a>
+                <a class=" nav-link fw-bold fs-5 " href=""><i class="fa fa-cutlery"></i> </a>
+            </div>
+            <div class="d-flex flex-column ms-3">
+                <a class=" nav-link fw-bold fs-5 " href="">mobile</a>
+                <a class=" nav-link fw-bold fs-5 " href="">battery</a>
+                <a class=" nav-link fw-bold fs-5 " href="">cars</a>
+                <a class=" nav-link fw-bold fs-5 " href="">food</a>
+            </div>
+        </div>
+    </div>
+   <!-- main -->
+    <article class="mb-3">
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active">
+                <img src="./image/shopekeeper.jpg" class="d-block w-100" style="height:25rem;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+               <div class="carousel-item">
+                <img src="./image/moile-shop.jpg" class="d-block w-100" style="height:25rem;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./image/item-shop.jpg" class="d-block w-100" style="height:25rem;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./image/car-collcotion.jpg" class="d-block w-100" style="height:25rem;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fourth slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div id="component" class="iconlist d-flex flex-row justify-content-around mt-3">
+              <div class="icon1">
+                <!-- <i class="fa fa-plane"></i> -->
+                <img src="./h2.png" class=" rounded-pill" style="height: 60px; width: 60px;" alt=""><br>
+                jet pack
+              </div>
+              <div class="icon2">
+                <!-- <i class="fa fa-ban"></i> -->
+                <img src="./h3.png" class=" rounded-pill" style="height: 60px; width: 60px;" alt=""><br>
+                sold out
+              </div>
+              <div class="icon3">
+                <!-- <i class="fa fa-percent"></i><br> -->
+                <img src="./h2.png" class=" rounded-pill" style="height: 60px; width: 60px;" alt=""><br>
+                off
+              </div>
+              <div class="icon4">
+                <!-- <i class="fa fa-cubes"></i> -->
+                <img src="./h4.png" class=" rounded-pill" style="height: 60px; width: 60px;" alt=""><br>
+                suggest day
+              </div>
+              <div class="icon5">
+                <!-- <i class="fa fa-star-christmas"></i> -->
+                <img src="./h2.png" class=" rounded-pill" style="height: 60px; width: 60px;" alt=""><br>
+                friday count
+              </div>
+              <div class="icon6">
+                <img src="./h1.png" class=" rounded-pill" style="height: 60px; width: 60px;" alt=""><br>
+                more
+              </div>
+          </div>
+          <div id="wonder-suggest">
+            <div id="title-suggest"></div>
+            <div id="any-suggest"></div>
+          </div>
+    </article>
+    <!-- card tag -->
+    <div class="d-flex flex-row flex-wrap mt-5 mb-5 ">
+      <div class="card d-flex flex-row">
+        <div class="card-body text-center align-self-center">
+          <h5 class=" card-title mb-5">card title</h5>
+          <img src="./Photos of the goods/finger-discount.jpg" alt="" class=" card-img-top mt-5 mb-5">
+          <a href="#">
+            <p class=" card-text mt-3">see more ... &#62</p>
+          </a>
+        </div>
+        <div class=" d-none d-md-flex flex-row mt-5 mb-5">
+        <div class="card me-2">
+          <img src="./Photos of the goods/hairdryer.png" alt="" class=" card-img-top">
+          <div class="card-body">
+            <h5 class=" card-title">card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, distinctio.</p>
+          </div>
+        </div>
+        <div class="card me-2">
+          <img src="./Photos of the goods/hairdryer.png" alt="" class=" card-img-top">
+          <div class="card-body">
+            <h5 class=" card-title">card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, distinctio.</p>
+          </div>
+        </div>
+        <div class="card me-2">
+          <img src="./Photos of the goods/hairdryer.png" alt="" class=" card-img-top">
+          <div class="card-body">
+            <h5 class=" card-title">card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, distinctio.</p>
+          </div>
+        </div>
+        <div class="card me-2">
+          <img src="./Photos of the goods/hairdryer.png" alt="" class=" card-img-top">
+          <div class="card-body">
+            <h5 class=" card-title">card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, distinctio.</p>
+          </div>
+        </div>
+        <div class="card me-2">
+          <img src="./Photos of the goods/hairdryer.png" alt="" class=" card-img-top">
+          <div class="card-body">
+            <h5 class=" card-title">card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, distinctio.</p>
+          </div>
+        </div>
+        </div>
+        <div class="d-flex flex-row align-self-center">
+          <button class="btn btn-outline-dark rounded-pill"><span class="bg-gradient rounded-pill fw-bold">&#62</span></button>
+        </div>
+      </div>
+    </div>
+    <!-- linear suggest -->
+      <div id="linearsuggest" class=" d-none flex-row justify-content-around">
+        <span class=" text-center rounded-pill  d-flex align-self-center">
+          <p class="mt-1 fs-3" style="font-weight: bold;">wonder suggest in day <span class="bg-danger badge rounded-pill">50 % off</span></p>
+        </span>
+        <div >
+          <img src="./Photos of the goods/speaker.jpg" alt="">
+          <span class=" bg-danger badge rounded-pill  ">50%</span>
+        </div>
+        <div >
+          <img src="./Photos of the goods/speaker.jpg" alt="">
+          <span class=" bg-danger badge rounded-pill ">50%</span>
+        </div>
+        <div >
+          <img src="./Photos of the goods/speaker.jpg" alt="">
+          <span class=" bg-danger badge rounded-pill ">50%</span>
+        </div>
+        <div >
+          <img src="./Photos of the goods/speaker.jpg" alt="">
+          <span class=" bg-danger badge rounded-pill ">50%</span>
+        </div>
+        <div class="d-flex align-self-center">
+          <button class="btn btn-info">Viewed more list <span class="bg-gradient rounded-pill fw-bold">&#62</span> </button>
+        </div>
+      </div>
+     <!-- circle suggest -->
+     <div id="category" class="d-flex flex-row flex-wrap text-center mt-5 justify-content-center">
+      <div id="lot1" class="ms-5 me-5 text-center">
+        <a href="#">
+          <div class=" rounded-pill">
+            <img src="./Photos of the goods/mobile.png">
+          </div>
+          <p class="text-center">mobile</p>
+        </a>
+      </div>
+      <div id="lot2" class="ms-5 me-5 text-center">
+        <a href="#">
+          <div class=" rounded-pill">
+            <img src="./Photos of the goods/derss.png" class="">
+          </div>
+          <p class="text-center">derss</p>
+        </a>
+      </div>
+      <div id="lot3" class="ms-5 me-5 text-center">
+        <a href="#">
+          <div class=" rounded-pill">
+            <img src="./Photos of the goods/food.png" class="">
+          </div>
+          <p class="text-center">food</p>
+        </a>
+      </div>
+      <div id="lot4" class="ms-5 me-5 text-center">
+        <a href="#">
+          <div class=" rounded-pill">
+          <img src="./Photos of the goods/headfon.png" class="">
+          </div>
+          <p class="text-center">headphone</p>
+        </a>
+      </div>
+      <div id="lot5" class="ms-5 me-5 text-center">
+        <a href="#">
+          <div class=" rounded-pill">
+          <img src="./Photos of the goods/sports.png" class="">
+          </div>
+          <p class="text-center">sports</p>
+        </a>
+      </div>
+     </div>
+     <!-- Footer -->
+     <footer class=" bg-secondary text-center">
+      <div class="d-flex flex-column flex-md-row  pb-2 pt-3 m-5 m-md-0 border-5 border-info">
+        <ul class="d-flex flex-column ms-4 mt-3 w-25 border-5 border-end">
+          <li class="ms-2 mb-1"><a href="#"> Home</a></li>
+          <li class="ms-2 mb-1"><a href="#"> About us</a></li>
+          <li class="ms-2 mb-1"><a href="#"> Top Rated</a></li>
+          <li class="ms-2 mb-1"><a href="#"> Top Viewed</a></li>
+          <li class="ms-2 mb-1"><a href="#"> Top Seller</a></li>
+        </ul>
+        <ul class="d-flex flex-column mt-3 w-25 border-5 border-end">
+          <a href="#" class="ms-2 w-100"><li class="m-1 w-100">Mobile Center</li></a>
+          <a href="#" class="ms-2 w-100"><li class="m-1 w-100">Car Gallery</li></a>
+          <a href="#" class="ms-2 w-100"><li class="m-1 w-100">News IT</li></a>
+        </ul>
+        <ul class="mt-3 w-25">
+          <li><a href="#"><i class="fa-solid fa-bus me-2"></i>Bus</a></li>
+          <li><a href="#"><i class="fa fa-plane me-2"></i>Airplane</a></li>
+          <li><a href="#"><i class="fa-solid fa-train me-2"></i>Train</a></li>
+          <li><a href="#"><i class="fa-solid fa-ship me-2"></i>Ship</a></li>
+        </ul>
+        <img id="logofooter" src="./Logo Icons/logo-footer.png" alt="logo-footer" class=" rounded-pill pb-3 ">
+      </div>
+     </footer>
+</body>
+        <script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/1ece41a795.js" crossorigin="anonymous"></script>
+</html>
