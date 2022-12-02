@@ -11,6 +11,7 @@
     <title>Big Mart</title>
 </head>
 <body>
+    <!--header-->
     <header class="navbar d-flex flex-row justify-content-around mb-3" id="header">
         <a class=" navbar-brand" href="#">
             <img src="./download.png" style="width:48px ;height:48px ;" alt="logo">
@@ -57,63 +58,75 @@
             </div>
         </div>
     </div>
+    <!--end navbar-->
     <article class="mt-3 d-flex flex-row p-2">
-        <div id="side" class="me-2">
-            <div class="">
+        <!--side bar-->
+        <div id="side" class="me-2 col-3">
+            <div class="d-flex flex-column">
                 <h3 class="card-title mb-3">Filter</h3>
-                
-                <ul class="list-group list-group">
-                    <li class=" list-group-item" onclick="show()">item1</li>
-                    <div id="dd">
-                        <ul class="list-group">
-                            <li class=" list-group-item">item1</li>
-                            <li class=" list-group-item">item2</li>
-                            <li class=" list-group-item">item3</li>
-                        </ul>
-                    </div>
-                    <li class=" list-group-item">item2</li>
-                    <li class=" list-group-item">item3</li>
+                <ul class="list-group list-group d-flex flex-column">
+                    <li class=" list-group-item">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
+                            <label class="form-check-label" for="flexSwitchCheckDefault1">best price</label>
+                          </div>
+                    </li>
+                    <li class=" list-group-item">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault2">
+                            <label class="form-check-label" for="flexSwitchCheckDefault2">cheapest</label>
+                          </div>
+                    </li>
+                    <li class=" list-group-item">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault3">
+                            <label class="form-check-label" for="flexSwitchCheckDefault3">most expensive</label>
+                          </div>
+                    </li>
                 </ul>
-                
             </div>
         </div>
-       <div class=" card-group ">
-        <div id="card-one" class=" card">
-            <img src="./Image/laptop asus 1.png" alt="" class=" card-img-top">
-            <div class="card-body">
-                <h3 class=" card-title">card title</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius.</p>
-            </div>
-            <div class="card-footer">
-                <p class=" fw-bold">170$</p>
-                <p class=" fw-bold text-decoration-line-through">270$</p>
+        <!--main-->
+        <div class="container">
+            <div class=" card-group ">
+                <div id="card-one" class=" card">
+                    <img src="./Image/laptop asus 1.png" alt="" class=" card-img-top">
+                    <div class="card-body">
+                        <h3 class=" card-title">card title</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class=" fw-bold">170$</p>
+                        <p class=" fw-bold text-decoration-line-through">270$</p>
+                    </div>
+                </div>
+                <div class=" card">
+                    <img src="./Image/laptop asus 1.png" alt="" class=" card-img-top">
+                    <div class="card-body">
+                        <h3 class=" card-title">card title</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class=" fw-bold">170$</p>
+                        <p class=" fw-bold text-decoration-line-through">270$</p>
+                    </div>
+                </div>
+                <div class=" card">
+                    <img src="./Image/laptop asus 1.png" alt="" class=" card-img-top">
+                    <div class="card-body">
+                        <h3 class=" card-title">card title</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class=" fw-bold">170$</p>
+                        <p class=" fw-bold text-decoration-line-through">270$</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class=" card">
-            <img src="./Image/laptop asus 1.png" alt="" class=" card-img-top">
-            <div class="card-body">
-                <h3 class=" card-title">card title</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius.</p>
-            </div>
-            <div class="card-footer">
-                <p class=" fw-bold">170$</p>
-                <p class=" fw-bold text-decoration-line-through">270$</p>
-            </div>
-        </div>
-        <div class=" card">
-            <img src="./Image/laptop asus 1.png" alt="" class=" card-img-top">
-            <div class="card-body">
-                <h3 class=" card-title">card title</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius.</p>
-            </div>
-            <div class="card-footer">
-                <p class=" fw-bold">170$</p>
-                <p class=" fw-bold text-decoration-line-through">270$</p>
-            </div>
-        </div>
-       </div>
+        <!--end main-->
     </article>
-
+    <!--footer-->
     <footer class=" bg-secondary text-center">
         <div class="d-flex flex-column flex-md-row  pb-2 pt-3 m-5 m-md-0 border-5 border-info">
           <ul class="d-flex flex-column ms-4 mt-3 w-25 border-5 border-end">
@@ -140,10 +153,4 @@
 </body>
 <script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/1ece41a795.js" crossorigin="anonymous"></script>
-<script>
-    var dd=document.getElementById("dd");
-    function show(){
-        dd.classList.toggle("d-block");
-    };
-</script>
 </html>
