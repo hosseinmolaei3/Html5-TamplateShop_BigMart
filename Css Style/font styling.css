@@ -1,0 +1,7 @@
+@font-face {
+    font-family: Yellowtail;
+    src: url(./Font/Sunda_Prada.ttf);
+}
+body{
+    font-family: Yellowtail ;
+}

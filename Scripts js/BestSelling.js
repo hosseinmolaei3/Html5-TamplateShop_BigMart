@@ -5,27 +5,35 @@ function Selection(c){
         x.children[i].style.display='block';
     }
     if (c =='laptop') {
-        for(let i=0;i<x.children.length;i++)
-        if(i!=0){
-            x.children[i].style.display='none';
+        x.children[0].style.display='block';
+        for(let i=0;i<x.children.length;i++){
+            if(i!=0){
+                x.children[i].style.display='none';
+            }
         }
     }
     if (c =='mobile') {
-        for(let i=0;i<x.children.length;i++)
-        if(i!=1){
-            x.children[i].style.display='none';
+        x.children[1].style.display='block';
+        for(let i=0;i<x.children.length;i++){
+            if(i!=1){
+                x.children[i].style.display='none';
+            }
         }
     }
     if (c =='food') {
-        for(let i=0;i<x.children.length;i++)
-        if(i!=2){
-            x.children[i].style.display='none';
+        x.children[2].style.display='block';
+        for(let i=0;i<x.children.length;i++){
+            if(i!=2){
+                x.children[i].style.display='none';
+            }
         }
     }
     if (c =='dress') {
-        for(let i=0;i<x.children.length;i++)
-        if(i!=3){
-            x.children[i].style.display='none';
+        x.children[3].style.display='block';
+        for(let i=0;i<x.children.length;i++){
+            if(i!=3){
+                x.children[i].style.display='none';
+            }
         }
     }
 }

@@ -1,0 +1,12 @@
+#link-computer{
+    border-radius: 18px 18px 18px 18px;
+    background-color: black;
+    animation: anime 5s ease-in 2s infinite alternate;
+}
+@keyframes anime {
+    0%   {background-color:black;}
+    25%  {background-color:rgb(58, 58, 29); }
+    50%  {background-color:blue; }
+    75%  {background-color:rgb(33, 59, 33); }
+    100% {background-color:rgb(79, 35, 35); }
+}
